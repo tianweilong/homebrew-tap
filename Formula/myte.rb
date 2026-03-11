@@ -5,21 +5,21 @@
 class Myte < Formula
   desc "myte CLI"
   homepage "https://github.com/tianweilong/myte-dist"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.0/myte_0.1.0_darwin_amd64.tar.gz"
-      sha256 "30e4bd945fdd5e52c4de609f82c58210b9794400f0cd7af42b1f95d338896196"
+      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.1/myte_0.1.1_darwin_amd64.tar.gz"
+      sha256 "3159e5a898f8d0ff6b8442ea8f674949648795c3105a1ac5ee5fbb5f0fd060c5"
 
       define_method(:install) do
         bin.install "myte"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.0/myte_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b490a5378f2b6d943a5c9eccbefe97f39c9bddc243eb076820e544613264706a"
+      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.1/myte_0.1.1_darwin_arm64.tar.gz"
+      sha256 "ecdefc141944df9e62cc1e9e71ef5fe7b96b0583d718244f42039b55b1ecace0"
 
       define_method(:install) do
         bin.install "myte"
@@ -29,15 +29,15 @@ class Myte < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.0/myte_0.1.0_linux_amd64.tar.gz"
-      sha256 "88cd1c105e7d5877e2bd36d9ba35a2fb04f2097d71192d00fb4c193184ef7864"
+      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.1/myte_0.1.1_linux_amd64.tar.gz"
+      sha256 "995251bb952a69e3aad46d0355e7d0fc6ae0de95180f4224d26ce47af95ee70f"
       define_method(:install) do
         bin.install "myte"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.0/myte_0.1.0_linux_arm64.tar.gz"
-      sha256 "7fc4cc8c8d85404b813d65a52f67b1d0833328c33d49ccbd8eb18f499ac26d2e"
+      url "https://github.com/tianweilong/myte-dist/releases/download/v0.1.1/myte_0.1.1_linux_arm64.tar.gz"
+      sha256 "1ee57c739fb275f5292620dd2926a392f3a7fb951be87a299ee28dfd3ec68bb1"
       define_method(:install) do
         bin.install "myte"
       end
